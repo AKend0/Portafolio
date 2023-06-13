@@ -45,29 +45,48 @@ https://en.bem.info/methodology/quick-start/*/
     background-color: aqua;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     
 
 }
 .menu__header{
-    
+    width: 10%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     
-    
+}
+nav{
+    width: 60%;
 }
 .menu__list{
     display: flex;
+    justify-content: space-around;
 }
 
-.menu__list__item{
-    margin: 10px 20px;
-}
 /*Sección Title*/
 
 section.title{
-
+ background-color: rgb(196, 239, 230);
+ display: flex;
+ justify-content: space-around;
+ padding: 20px 0;
 }
-
+.title__div{
+    display: flex;
+    align-items: center;
+}
+.title__container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+.title__network{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    width: 50%;
+}
 /*Sección About*/
 
 section.about{

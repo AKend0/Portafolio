@@ -70,7 +70,7 @@ section.title{
  background-color: rgb(196, 239, 230);
  display: flex;
  justify-content: space-around;
- padding: 20px 0;
+ padding: 20px 200px;
 }
 .title__div{
     display: flex;
@@ -79,18 +79,33 @@ section.title{
 .title__container{
     display: flex;
     flex-direction: column;
-    margin-right: 5%;
+    padding-right: 5%;
+}
+.title__bio{
+    font-size: 52px;
 }
 .title__network{
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
-    width: 50%;
+    padding-right: 50%;
+    
 }
+
+.title__profile {
+    max-width: 300px;
+    height: auto;
+    transition: max-width 0.5s ease; /* Agrega una transición suave de 0.5 segundos */
+  }
 /*Sección About*/
 
 section.about{
-
+display: flex;
+}
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*Sección Hobbies*/
@@ -128,13 +143,32 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 790px){
+    section.title{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
 
+    .title__container{
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-right: 5%;
+        Margin-right: 5%;
+        width: 80%;
+    }
+
+     .title__network{
+        width: 100%;
+        
+    } 
+    .title__profile{
+        max-width: 146px
+    }
 /* Menú */
 
 /*title*/
-
-/*Skills*/
+    
 
 /*Hobbies*/
 

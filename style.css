@@ -41,10 +41,27 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-section.menu{
+.menu{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    
 
 }
+.menu__header{
+    
+    display: flex;
+    align-items: center;
+    
+    
+}
+.menu__list{
+    display: flex;
+}
 
+.menu__list__item{
+    margin: 10px 20px;
+}
 /*Sección Title*/
 
 section.title{

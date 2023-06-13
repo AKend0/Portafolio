@@ -90,7 +90,8 @@ section.title{
 /*Sección About*/
 
 section.about{
-
+background-color: bisque;
+display: flex;
 }
 
 /*Sección Hobbies*/

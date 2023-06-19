@@ -21,6 +21,7 @@ body {
 }
 ol, ul,li {
     list-style: none;
+    padding: 0px;
 }
 a{
     text-decoration: none;
@@ -41,36 +42,38 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-.menu{
-    background-color: aqua;
+section.menu{
+    background-color: #EAF2FD;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-
+    padding:10px;
 }
 .menu__header{
-    width: 10%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
+    align-items: center;    
 }
-nav{
-    width: 60%;
-}
+
 .menu__list{
     display: flex;
-    justify-content: space-around;
+    list-style: none;
+    
+}
+.menu__list__item{
+    margin: 10px;
+}
+.menu__list__item__contato{
+    display: none;
 }
 
 /*Sección Title*/
 
 section.title{
- background-color: rgb(196, 239, 230);
  display: flex;
  justify-content: space-around;
- padding: 20px 200px;
+ padding: 10%;
 }
 .title__div{
     display: flex;
@@ -81,15 +84,24 @@ section.title{
     flex-direction: column;
     padding-right: 5%;
 }
+.title__bio_presentation{
+    font-size: 48px;
+    margin: 0 0 10px 0;
+}
 .title__bio{
-    font-size: 52px;
+    font-size: 48px;
+    margin: 0 0 40px 0;
+}
+.title__subsection{
+    margin: 0 0 20px 0;
 }
 .title__network{
     display: flex;
-    justify-content: space-between;
-    padding-left: 0px;
-    padding-right: 50%;
-    
+    margin: 10px 0;
+    padding: 0px;
+}
+.title__network__item{
+    margin-right: 10%;
 }
 
 .title__profile {
@@ -100,14 +112,44 @@ section.title{
 /*Sección About*/
 
 section.about{
-display: flex;
-}
-.about__container{
     display: flex;
-    flex-direction: column;
+    padding: 10%;
+    background-color: #EAF2FD;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
+/* seccion skills */
+section.skills{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+.skills__line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.skills__title{
+    text-align: center;
+}
+.skills__box{
+    background-color: rgb(255, 255, 255);
+    width: 176px;
+    height: 174px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    
+    
+}
+.skills__img{
+    
+}
 /*Sección Hobbies*/
 
 section.hobbies{
@@ -143,18 +185,22 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (max-width: 790px){
+@media (max-width: 820px){
+    
+      .menu__list {
+        display: none;
+        
+      }.menu__list__item__contato{
+        display: flex;
+    }
     section.title{
-        flex-direction: column;
         align-items: center;
-        padding: 20px;
+
     }
 
     .title__container{
-        margin-right: 0;
-        margin-bottom: 10px;
-        margin-right: 5%;
-        Margin-right: 5%;
+        
+        margin: 0 5%;
         width: 80%;
     }
 
@@ -163,7 +209,18 @@ Utiliza las referencias de los breakpoints @media abajo */
         
     } 
     .title__profile{
-        max-width: 146px
+        max-width: 200px;
+        margin-right: 10%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .skills__line{
+        flex-wrap: wrap;
+    }
+    .skills__box{
+        width: 224px;
+        height: 118px;   
     }
 /* Menú */
 
